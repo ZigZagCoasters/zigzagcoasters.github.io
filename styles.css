@@ -74,29 +74,15 @@ header {
   color: rgba(255, 255, 255, 0.7);
 }
 
-@media screen and (max-width: 768px) {
-  .tab-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    top:0;
-  }
-  
-  header{
-    height: 30vh;
-  }
-  
-  footer {
-    height: 100vh;
-    top: 100%;
-  }
-}
-
 .main-title {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-top: 20px;
   position: relative;
-  top: 50px;
+  top: 30px;
+}
+
+#home-title {
+  font-size: 7rem;
 }
 
 .desc {
@@ -153,4 +139,45 @@ footer {
   display: flex;
   position: relative;
   top: 10px;
+}
+
+.location {
+  position: relative;
+  top: 50px;
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .tab-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top:0;
+    font-size: rem;
+  }
+  
+  header{
+    height: 30vh;
+  }
+  
+  /* footer {
+    height: 100vh;
+  } */
+
+  .email, .copyright {
+    font-size: 1rem;
+  }
+
+  .location {
+    width: 450px;
+    height: 300px;
+  }
+
+  .main-title {
+    font-size: 4rem
+  }
+
+  #home-title {
+    font-size: 5rem;
+  }
 }
