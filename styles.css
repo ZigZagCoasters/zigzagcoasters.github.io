@@ -16,7 +16,7 @@ body {
 header {
   background-color: #e7bfa3;
   width: 100% !important; 
-  height: 15vh;
+  height: 20vh;
   font-size: 1.3rem;
   margin: 0;
   padding: 0;
@@ -153,7 +153,7 @@ footer {
     flex-direction: column;
     gap: 10px;
     top:0;
-    font-size: rem;
+    font-size: 1.3rem;
   }
   
   header{
@@ -181,3 +181,54 @@ footer {
     font-size: 5rem;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .tab-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top:0;
+    font-size: 1rem;
+  }
+
+  header{
+    height: 35vh;
+  }
+
+  .main-title {
+    font-size: 3rem
+  }
+
+  #home-title {
+    font-size: 4rem;
+  }
+
+  .location {
+    width: 300px;
+    height: 200px;
+  }
+
+  .email, .copyright {
+    font-size: 0.7rem;
+  }
+
+  .tab-links {
+    font-size: 1.3rem
+  }
+  
+  .social-icons a {
+    font-size: 0.8rem;
+  }
+
+}
+
+@media screen and (max-height: 900px) and (min-width: 700px) {
+  header { 
+    height: 150px;
+  }
+
+  footer {
+    height: 150px;
+  }
+}
+
