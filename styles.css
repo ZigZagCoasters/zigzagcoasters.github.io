@@ -148,7 +148,7 @@ footer {
 }
 
 .credit {
-  font-size: 1rem;
+  font-size: 0.8rem;
   position: relative;
   top: 10px;
 }
@@ -188,7 +188,7 @@ footer {
   }
 
   .credit {
-    font-size: 0.95rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -230,16 +230,19 @@ footer {
     font-size: 1rem;
   }
 
+  .credit {
+    font-size: 0.65rem;
+  }
 }
 
 
 @media screen and (max-height: 900px) and (min-width: 700px) {
   header { 
-    height: 150px;
+    height: 180px;
   }
 
   footer {
-    height: 150px;
+    height: 180px;
   }
 }
 
