@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  flex: 1; /* Pushes the footer down */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -98,18 +113,18 @@ footer {
   width: 100%;
   height: 180px;
   font-size: 1.3rem;
-  margin: 0;
-  padding: 0;
+  margin: 50px 0 0; /* Adds spacing above footer instead of pushing it way down */
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 1000px;
   left: 0;
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
+
 
 .social-icons {
   display: flex;
@@ -153,6 +168,52 @@ footer {
   top: 10px;
 }
 
+.form {
+  position: relative;
+  top: 50px;
+}
+
+.linktree {
+  color: #53a368;
+  text-decoration: none;
+}
+
+.linktree:hover {
+  color: #53a368b0;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.form-desc {
+  font-size: 1.3rem;
+  position: relative;
+  font-weight: 500;
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 5px; 
+  text-decoration: none;
+  color: rgb(54, 141, 212);
+  font-size: 1.2rem;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.email-link i {
+  margin-left: 3px; 
+  font-size: 1.2rem; 
+  vertical-align: middle;
+  transition: color 0.3s ease;
+
+}
+
+.email-link:hover {
+  color: rgba(54, 141, 212, 0.7);
+}
+
+
 @media screen and (max-width: 768px) {
   .tab-links {
     display: flex;
@@ -189,6 +250,14 @@ footer {
 
   .credit {
     font-size: 0.7rem;
+  }
+
+  .linktree {
+    text-decoration: underline;
+  }
+
+  .form {
+    width: 300px;
   }
 }
 
@@ -232,6 +301,10 @@ footer {
 
   .credit {
     font-size: 0.65rem;
+  }
+
+  .linktree {
+    text-decoration: underline;
   }
 }
 
