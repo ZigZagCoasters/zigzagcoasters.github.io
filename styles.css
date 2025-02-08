@@ -157,7 +157,7 @@ footer {
   top: 10px;
 }
 
-.location {
+.map {
   position: relative;
   top: 50px;
   border-radius: 5%;
@@ -177,6 +177,7 @@ footer {
 .linktree {
   color: #53a368;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .linktree:hover {
@@ -198,8 +199,7 @@ footer {
   text-decoration: none;
   color: rgb(54, 141, 212);
   font-size: 1.2rem;
-  padding-top: 50px;
-  padding-bottom: 150px;
+  top: 50px;
 }
 
 .email-link i {
@@ -230,6 +230,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .purchase-button {
@@ -242,6 +244,38 @@ footer {
   height: 700px;
   position: relative;
   top: 100px
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ye {
+  color: #EE7D00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.ye:hover {
+  color: #EE7D00b0;
+  transition: color 0.3s ease;
+}
+
+.location {
+  font-size: 1.3rem;
+  position: relative;
+  top: 150px;
+}
+
+.story{
+  margin: 25px;
+}
+
+.location {
+  margin: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -265,7 +299,7 @@ footer {
     font-size: 1rem;
   }
 
-  .location {
+  .map {
     width: 300px;
     height: 250px;
   }
@@ -296,7 +330,7 @@ footer {
   }
 
   .product-name {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .home-image{
@@ -304,6 +338,11 @@ footer {
     height: 225px;
     position: relative;
     top: 100px
+  }
+
+  .product {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -328,7 +367,7 @@ footer {
     font-size: 4rem;
   }
 
-  .location {
+  .map {
     width: 250px;
     height: 220px;
   }
@@ -358,6 +397,16 @@ footer {
 @media screen and (max-height: 900px) and (min-width: 700px) {
   header { 
     height: 180px;
+  }
+
+  footer {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 700px) {
+  header { 
+    height: 250px;
   }
 
   footer {
