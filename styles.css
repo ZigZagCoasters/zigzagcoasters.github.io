@@ -265,17 +265,31 @@ footer {
 }
 
 .location {
-  font-size: 1.3rem;
+  font-size: 100px;
   position: relative;
-  top: 150px;
+  top: 50px;
 }
 
 .story{
-  margin: 25px;
+  width: 55%;
+  margin: 0 auto;
 }
 
 .location {
   margin: 25px;
+}
+
+.custom-orders {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.custom-link {
+  transition: color 0.3s ease;
+}
+
+#school {
+  font-size: 1.7rem;
 }
 
 @media screen and (max-width: 768px) {
