@@ -358,6 +358,15 @@ footer {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .story {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #school {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
